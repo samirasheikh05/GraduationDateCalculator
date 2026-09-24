@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+}
+
+.container {
+    background: #fff;
+    border-radius: 16px;
+    padding: 30px;
+    width: 100%;
+    max-width: 550px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    color: #333;
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.input-section label {
+    color: #555;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.input-section input {
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.input-section input:focus {
+    border-color: #667eea;
+}
+
+.button-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    flex: 1;
+    padding: 12px 20px;
+    background: #667eea;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #5568d3;
+}
+
+button.secondary {
+    background: transparent;
+    color: #667eea;
+    border: 2px solid #667eea;
+}
+
+button.secondary:hover {
+    background: #667eea;
+    color: #fff;
+}
+
+.results {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 2px solid #f0f0f0;
+}
+
+.results h2 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+#results-list {
+    list-style: none;
+}
+
+#results-list li {
+    padding: 10px 12px;
+    margin-bottom: 6px;
+    background: #f8f9fc;
+    border-left: 4px solid #667eea;
+    border-radius: 6px;
+    color: #444;
+    font-size: 15px;
+}
+
+#results-list li strong {
+    color: #333;
+    display: inline-block;
+    min-width: 200px;
+}
+
+.hidden {
+    display: none;
+}
+
+.error {
+    color: #e64545;
+    font-size: 14px;
+    padding: 10px;
+    background: #ffeaea;
+    border-radius: 6px;
+    border-left: 4px solid #e64545;
+}
