@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graduation Date Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <header>
+            <h1>🎓 Graduation Date Calculator</h1>
+            <p class="subtitle">Find out how much time is left until graduation.</p>
+        </header>
+
+        <section class="input-section">
+            <label for="grad-date">Graduation Date</label>
+            <input type="date" id="grad-date" />
+
+            <label for="grad-time">Graduation Time</label>
+            <input type="time" id="grad-time" />
+
+            <div class="button-row">
+                <button id="calc-btn">Calculate</button>
+                <button id="clear-btn" class="secondary">Clear</button>
+            </div>
+        </section>
+
+        <section id="results" class="results hidden">
+            <h2>Results</h2>
+            <ul id="results-list"></ul>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
